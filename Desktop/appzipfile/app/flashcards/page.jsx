@@ -79,18 +79,18 @@ function FlashcardsContent() {
           {/* Progress Bar */}
           <div className="h-2 bg-[#1a1a2a] rounded-full mb-8 overflow-hidden">
             <div
-              className="h-full bg-gradient-to-r from-indigo-600 to-blue-600 transition-all duration-300"
+              className="h-full bg-gradient-to-r from-blue-600 to-cyan-600 transition-all duration-300"
               style={{ width: `${((currentIndex + 1) / dueCards.length) * 100}%` }}
             />
           </div>
 
           {/* Flashcard */}
           <div
-            className="bg-[#0d0d15] border border-[#1a1a2a] rounded-2xl p-8 min-h-[300px] flex flex-col cursor-pointer transition-all hover:border-indigo-500/30"
+            className="bg-[#0d0d15] border border-[#1a1a2a] rounded-2xl p-8 min-h-[300px] flex flex-col cursor-pointer transition-all hover:border-blue-500/30"
             onClick={() => setShowAnswer(!showAnswer)}
           >
             <div className="flex items-center gap-2 mb-4">
-              <span className="px-2 py-1 bg-indigo-500/20 text-indigo-400 text-xs rounded">{card.subject}</span>
+              <span className="px-2 py-1 bg-blue-500/20 text-blue-400 text-xs rounded">{card.subject}</span>
               <span className="px-2 py-1 bg-[#1a1a2a] text-gray-400 text-xs rounded">{card.concept}</span>
             </div>
 
@@ -143,7 +143,7 @@ function FlashcardsContent() {
                 </button>
                 <button
                   onClick={() => handleReview(4)}
-                  className="p-3 bg-indigo-500/20 border border-indigo-500/30 rounded-xl text-indigo-400 hover:bg-indigo-500/30 transition-colors"
+                  className="p-3 bg-blue-500/20 border border-blue-500/30 rounded-xl text-blue-400 hover:bg-blue-500/30 transition-colors"
                 >
                   <Sparkles className="w-5 h-5 mx-auto mb-1" />
                   <span className="text-xs">Easy</span>
@@ -166,7 +166,7 @@ function FlashcardsContent() {
         {/* Stats Cards */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
           <div className="bg-[#0d0d15] border border-[#1a1a2a] rounded-xl p-4">
-            <div className="flex items-center gap-2 text-indigo-400 mb-2">
+            <div className="flex items-center gap-2 text-blue-400 mb-2">
               <Layers className="w-5 h-5" />
             </div>
             <p className="text-2xl font-bold text-white">{stats?.total || 0}</p>
@@ -197,7 +197,7 @@ function FlashcardsContent() {
 
         {/* Start Review Button */}
         {dueCards.length > 0 && (
-          <div className="bg-gradient-to-r from-indigo-600/20 to-blue-600/20 border border-indigo-500/30 rounded-xl p-6 mb-8">
+          <div className="bg-gradient-to-r from-blue-600/20 to-cyan-600/20 border border-blue-500/30 rounded-xl p-6 mb-8">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
               <div>
                 <h2 className="text-xl font-semibold text-white mb-1">{dueCards.length} cards due for review</h2>
@@ -254,12 +254,12 @@ function FlashcardsContent() {
               {filteredCards.map((card) => (
                 <div
                   key={card.id}
-                  className="bg-[#0d0d15] border border-[#1a1a2a] rounded-xl p-4 hover:border-indigo-500/30 transition-colors"
+                  className="bg-[#0d0d15] border border-[#1a1a2a] rounded-xl p-4 hover:border-blue-500/30 transition-colors"
                 >
                   <div className="flex items-start justify-between gap-4">
                     <div className="flex-1">
                       <div className="flex items-center gap-2 mb-2">
-                        <span className="px-2 py-0.5 bg-indigo-500/20 text-indigo-400 text-xs rounded">
+                        <span className="px-2 py-0.5 bg-blue-500/20 text-blue-400 text-xs rounded">
                           {card.subject}
                         </span>
                         <span className="px-2 py-0.5 bg-[#1a1a2a] text-gray-400 text-xs rounded">{card.concept}</span>
