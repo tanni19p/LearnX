@@ -299,7 +299,7 @@ function QuizContent() {
         {/* Progress Bar */}
         <div className="w-full h-2 bg-[#1a1a2a] rounded-full mb-8 overflow-hidden">
           <div
-            className="h-full bg-gradient-to-r from-purple-600 to-pink-500 rounded-full transition-all duration-300"
+            className="h-full bg-gradient-to-r from-indigo-600 to-blue-500 rounded-full transition-all duration-300"
             style={{ width: `${progress}%` }}
           />
         </div>
@@ -307,7 +307,7 @@ function QuizContent() {
         {/* Question Card */}
         <div className="bg-[#0d0d15] border border-[#1a1a2a] rounded-2xl p-8 mb-6">
           <div className="flex items-start gap-4 mb-8">
-            <span className="flex-shrink-0 w-10 h-10 bg-purple-500/10 rounded-xl flex items-center justify-center text-purple-400 font-bold">
+            <span className="flex-shrink-0 w-10 h-10 bg-indigo-500/10 rounded-xl flex items-center justify-center text-indigo-400 font-bold">
               {currentQuestionIndex + 1}
             </span>
             <h2 className="text-xl text-white leading-relaxed">{currentQuestion.question}</h2>
@@ -324,8 +324,8 @@ function QuizContent() {
                   onClick={() => handleOptionSelect(index)}
                   className={`w-full p-4 rounded-xl text-left transition-all ${
                     isSelected
-                      ? "bg-purple-600 border-2 border-purple-600 text-white"
-                      : "bg-[#1a1a2a] border-2 border-[#2a2a3a] text-gray-300 hover:border-purple-500/50 hover:bg-[#1a1a2a]/80"
+                      ? "bg-indigo-600 border-2 border-indigo-600 text-white"
+                      : "bg-[#1a1a2a] border-2 border-[#2a2a3a] text-gray-300 hover:border-indigo-500/50 hover:bg-[#1a1a2a]/80"
                   }`}
                 >
                   <div className="flex items-center gap-3">
@@ -378,9 +378,9 @@ function QuizContent() {
                   onClick={() => setCurrentQuestionIndex(index)}
                   className={`w-10 h-10 rounded-lg font-medium transition-all ${
                     isCurrent
-                      ? "bg-purple-600 text-white"
+                      ? "bg-indigo-600 text-white"
                       : isAnswered
-                        ? "bg-purple-500/20 text-purple-400 border border-purple-500"
+                        ? "bg-indigo-500/20 text-indigo-400 border border-indigo-500"
                         : "bg-[#1a1a2a] text-gray-400 hover:bg-[#2a2a3a]"
                   }`}
                 >

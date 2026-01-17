@@ -27,20 +27,20 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-purple-500/10 to-transparent" />
-        <div className="absolute top-20 left-1/4 w-72 h-72 bg-purple-600/20 rounded-full blur-3xl" />
-        <div className="absolute top-40 right-1/4 w-96 h-96 bg-pink-500/10 rounded-full blur-3xl" />
+        <div className="absolute inset-0 bg-gradient-to-b from-indigo-500/10 to-transparent" />
+        <div className="absolute top-20 left-1/4 w-72 h-72 bg-indigo-600/20 rounded-full blur-3xl" />
+        <div className="absolute top-40 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl" />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-32">
           <div className="text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-purple-500/10 border border-purple-500/30 rounded-full mb-8">
-              <Brain className="w-4 h-4 text-purple-400" />
-              <span className="text-sm text-purple-400">AI-Powered Learning</span>
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-indigo-500/10 border border-indigo-500/30 rounded-full mb-8">
+              <Brain className="w-4 h-4 text-indigo-400" />
+              <span className="text-sm text-indigo-400">AI-Powered Learning</span>
             </div>
 
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6">
               AI Learning{" "}
-              <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-indigo-500 to-blue-500 bg-clip-text text-transparent">
                 Gap Detector
               </span>
             </h1>
@@ -53,7 +53,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/login"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-xl hover:opacity-90 transition-all shadow-lg shadow-purple-500/20 hover:shadow-purple-500/40"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-indigo-600 to-blue-600 text-white font-semibold rounded-xl hover:opacity-90 transition-all shadow-lg shadow-indigo-500/20 hover:shadow-indigo-500/40"
               >
                 Get Started
                 <ArrowRight className="w-5 h-5" />
@@ -84,10 +84,10 @@ export default function Home() {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="group p-8 bg-[#0d0d15] border border-[#1a1a2a] rounded-2xl hover:border-purple-500/50 transition-all hover:-translate-y-1"
+                className="group p-8 bg-[#0d0d15] border border-[#1a1a2a] rounded-2xl hover:border-indigo-500/50 transition-all hover:-translate-y-1"
               >
-                <div className="w-14 h-14 bg-purple-500/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-purple-500/20 transition-colors">
-                  <feature.icon className="w-7 h-7 text-purple-400" />
+                <div className="w-14 h-14 bg-indigo-500/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-indigo-500/20 transition-colors">
+                  <feature.icon className="w-7 h-7 text-indigo-400" />
                 </div>
                 <h3 className="text-xl font-semibold text-white mb-3">{feature.title}</h3>
                 <p className="text-gray-400">{feature.description}</p>
@@ -112,7 +112,7 @@ export default function Home() {
               { step: "4", title: "Improve", desc: "Follow personalized recommendations" },
             ].map((item, i) => (
               <div key={i} className="text-center">
-                <div className="w-16 h-16 mx-auto bg-gradient-to-br from-purple-600 to-pink-600 rounded-full flex items-center justify-center mb-4 text-2xl font-bold text-white">
+                <div className="w-16 h-16 mx-auto bg-gradient-to-br from-indigo-600 to-blue-600 rounded-full flex items-center justify-center mb-4 text-2xl font-bold text-white">
                   {item.step}
                 </div>
                 <h3 className="text-lg font-semibold text-white mb-2">{item.title}</h3>

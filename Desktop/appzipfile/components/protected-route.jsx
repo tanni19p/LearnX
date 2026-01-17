@@ -25,7 +25,7 @@ export default function ProtectedRoute({ children }) {
   if (checking) {
     return (
       <div className="min-h-screen bg-[#050505] flex items-center justify-center">
-        <div className="animate-pulse text-purple-400">Loading...</div>
+        <div className="animate-pulse text-indigo-400">Loading...</div>
       </div>
     )
   }

@@ -56,8 +56,8 @@ export default function LoginPage() {
       <div className="flex items-center justify-center min-h-[calc(100vh-64px)] px-4 py-12">
         <div className="w-full max-w-md">
           <div className="text-center mb-8">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-purple-500/10 rounded-2xl mb-4">
-              <Brain className="w-8 h-8 text-purple-400" />
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-indigo-500/10 rounded-2xl mb-4">
+              <Brain className="w-8 h-8 text-indigo-400" />
             </div>
             <h1 className="text-3xl font-bold text-white mb-2">{isLogin ? "Welcome Back" : "Create Account"}</h1>
             <p className="text-gray-400">
@@ -71,7 +71,7 @@ export default function LoginPage() {
               <button
                 onClick={() => setIsLogin(true)}
                 className={`flex-1 py-2 rounded-lg font-medium transition-all ${
-                  isLogin ? "bg-purple-600 text-white" : "text-gray-400 hover:text-white"
+                  isLogin ? "bg-indigo-600 text-white" : "text-gray-400 hover:text-white"
                 }`}
               >
                 Login
@@ -79,7 +79,7 @@ export default function LoginPage() {
               <button
                 onClick={() => setIsLogin(false)}
                 className={`flex-1 py-2 rounded-lg font-medium transition-all ${
-                  !isLogin ? "bg-purple-600 text-white" : "text-gray-400 hover:text-white"
+                  !isLogin ? "bg-indigo-600 text-white" : "text-gray-400 hover:text-white"
                 }`}
               >
                 Sign Up
@@ -102,7 +102,7 @@ export default function LoginPage() {
                       type="text"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full pl-11 pr-4 py-3 bg-[#1a1a2a] border border-[#2a2a3a] rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 transition-colors"
+                      className="w-full pl-11 pr-4 py-3 bg-[#1a1a2a] border border-[#2a2a3a] rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-indigo-500 transition-colors"
                       placeholder="John Doe"
                     />
                   </div>
@@ -117,7 +117,7 @@ export default function LoginPage() {
                     type="email"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full pl-11 pr-4 py-3 bg-[#1a1a2a] border border-[#2a2a3a] rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 transition-colors"
+                    className="w-full pl-11 pr-4 py-3 bg-[#1a1a2a] border border-[#2a2a3a] rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-indigo-500 transition-colors"
                     placeholder="you@example.com"
                   />
                 </div>
@@ -131,7 +131,7 @@ export default function LoginPage() {
                     type={showPassword ? "text" : "password"}
                     value={formData.password}
                     onChange={(e) => setFormData({ ...formData, password: e.target.value })}
-                    className="w-full pl-11 pr-12 py-3 bg-[#1a1a2a] border border-[#2a2a3a] rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 transition-colors"
+                    className="w-full pl-11 pr-12 py-3 bg-[#1a1a2a] border border-[#2a2a3a] rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-indigo-500 transition-colors"
                     placeholder="••••••••"
                   />
                   <button
@@ -149,7 +149,7 @@ export default function LoginPage() {
 
             {isLogin && (
               <p className="text-center text-gray-500 mt-6 text-sm">
-                <Link href="#" className="text-purple-400 hover:underline">
+                <Link href="#" className="text-indigo-400 hover:underline">
                   Forgot your password?
                 </Link>
               </p>

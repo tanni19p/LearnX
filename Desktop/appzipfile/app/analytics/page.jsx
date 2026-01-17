@@ -69,7 +69,7 @@ function AnalyticsContent() {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
           <div>
             <h1 className="text-3xl sm:text-4xl font-bold text-white mb-2">
-              <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-indigo-500 to-blue-500 bg-clip-text text-transparent">
                 Analytics
               </span>{" "}
               Dashboard
@@ -114,8 +114,8 @@ function AnalyticsContent() {
         {history.length === 0 ? (
           /* Empty State */
           <div className="bg-[#0d0d15] border border-[#1a1a2a] rounded-2xl p-12 text-center">
-            <div className="w-20 h-20 bg-purple-500/10 rounded-full flex items-center justify-center mx-auto mb-6">
-              <BarChart3 className="w-10 h-10 text-purple-400" />
+            <div className="w-20 h-20 bg-indigo-500/10 rounded-full flex items-center justify-center mx-auto mb-6">
+              <BarChart3 className="w-10 h-10 text-indigo-400" />
             </div>
             <h2 className="text-2xl font-semibold text-white mb-2">No Quiz History Yet</h2>
             <p className="text-gray-400 mb-6 max-w-md mx-auto">
@@ -134,8 +134,8 @@ function AnalyticsContent() {
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
               <div className="bg-[#0d0d15] border border-[#1a1a2a] rounded-xl p-5">
                 <div className="flex items-center gap-3 mb-3">
-                  <div className="w-10 h-10 bg-purple-500/10 rounded-lg flex items-center justify-center">
-                    <Trophy className="w-5 h-5 text-purple-400" />
+                  <div className="w-10 h-10 bg-indigo-500/10 rounded-lg flex items-center justify-center">
+                    <Trophy className="w-5 h-5 text-indigo-400" />
                   </div>
                 </div>
                 <p className="text-3xl font-bold text-white">{stats?.totalQuizzes || 0}</p>
@@ -144,8 +144,8 @@ function AnalyticsContent() {
 
               <div className="bg-[#0d0d15] border border-[#1a1a2a] rounded-xl p-5">
                 <div className="flex items-center gap-3 mb-3">
-                  <div className="w-10 h-10 bg-purple-500/10 rounded-lg flex items-center justify-center">
-                    <Target className="w-5 h-5 text-purple-400" />
+                  <div className="w-10 h-10 bg-indigo-500/10 rounded-lg flex items-center justify-center">
+                    <Target className="w-5 h-5 text-indigo-400" />
                   </div>
                 </div>
                 <p className={`text-3xl font-bold ${getScoreColor(stats?.avgScore || 0)}`}>{stats?.avgScore ?? "-"}%</p>
@@ -154,8 +154,8 @@ function AnalyticsContent() {
 
               <div className="bg-[#0d0d15] border border-[#1a1a2a] rounded-xl p-5">
                 <div className="flex items-center gap-3 mb-3">
-                  <div className="w-10 h-10 bg-purple-500/10 rounded-lg flex items-center justify-center">
-                    <TrendingUp className="w-5 h-5 text-purple-400" />
+                  <div className="w-10 h-10 bg-indigo-500/10 rounded-lg flex items-center justify-center">
+                    <TrendingUp className="w-5 h-5 text-indigo-400" />
                   </div>
                 </div>
                 <p className="text-3xl font-bold text-green-500">{stats?.bestScore ?? "-"}%</p>
@@ -164,8 +164,8 @@ function AnalyticsContent() {
 
               <div className="bg-[#0d0d15] border border-[#1a1a2a] rounded-xl p-5">
                 <div className="flex items-center gap-3 mb-3">
-                  <div className="w-10 h-10 bg-purple-500/10 rounded-lg flex items-center justify-center">
-                    <Clock className="w-5 h-5 text-purple-400" />
+                  <div className="w-10 h-10 bg-indigo-500/10 rounded-lg flex items-center justify-center">
+                    <Clock className="w-5 h-5 text-indigo-400" />
                   </div>
                 </div>
                 <p className="text-3xl font-bold text-white">{Math.round((stats?.totalTime || 0) / 60)}m</p>
@@ -177,7 +177,7 @@ function AnalyticsContent() {
             {stats?.subjectStats && Object.keys(stats.subjectStats).length > 0 && (
               <div className="bg-[#0d0d15] border border-[#1a1a2a] rounded-2xl p-6 mb-8">
                 <h2 className="text-xl font-semibold text-white mb-6 flex items-center gap-2">
-                  <Brain className="w-5 h-5 text-purple-400" />
+                  <Brain className="w-5 h-5 text-indigo-400" />
                   Subject Performance
                 </h2>
                 <div className="grid sm:grid-cols-2 gap-4">
@@ -189,7 +189,7 @@ function AnalyticsContent() {
                       </div>
                       <div className="w-full bg-[#1a1a2a] rounded-full h-2 mb-3">
                         <div
-                          className="bg-gradient-to-r from-purple-600 to-pink-500 h-2 rounded-full transition-all"
+                          className="bg-gradient-to-r from-indigo-600 to-blue-500 h-2 rounded-full transition-all"
                           style={{ width: `${data.avgScore}%` }}
                         />
                       </div>
@@ -227,7 +227,7 @@ function AnalyticsContent() {
             {/* Quiz History */}
             <div className="bg-[#0d0d15] border border-[#1a1a2a] rounded-2xl p-6">
               <h2 className="text-xl font-semibold text-white mb-6 flex items-center gap-2">
-                <Calendar className="w-5 h-5 text-purple-400" />
+                <Calendar className="w-5 h-5 text-indigo-400" />
                 Quiz History
               </h2>
 

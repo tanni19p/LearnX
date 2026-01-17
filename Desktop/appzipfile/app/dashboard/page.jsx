@@ -16,7 +16,7 @@ const subjects = [
     name: "Operating Systems",
     icon: Server,
     description: "Processes, Memory Management, File Systems, Scheduling",
-    color: "from-purple-500 to-purple-600",
+    color: "from-indigo-500 to-indigo-600",
     questions: 20,
   },
   {
@@ -24,7 +24,7 @@ const subjects = [
     name: "DBMS",
     icon: Database,
     description: "SQL, Normalization, Transactions, Indexing",
-    color: "from-pink-500 to-pink-600",
+    color: "from-blue-500 to-blue-600",
     questions: 20,
   },
   {
@@ -40,7 +40,7 @@ const subjects = [
     name: "Computer Networks",
     icon: Network,
     description: "OSI Model, TCP/IP, Routing, Security",
-    color: "from-fuchsia-500 to-fuchsia-600",
+    color: "from-sky-500 to-sky-600",
     questions: 20,
   },
 ]
@@ -83,7 +83,7 @@ function DashboardContent() {
         <div className="mb-8">
           <h1 className="text-3xl sm:text-4xl font-bold text-white mb-2">
             Hello,{" "}
-            <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-indigo-500 to-blue-500 bg-clip-text text-transparent">
               {user?.name || "Student"}
             </span>
           </h1>
@@ -91,10 +91,10 @@ function DashboardContent() {
         </div>
 
         {gamification && (
-          <div className="bg-gradient-to-r from-purple-600/10 to-pink-600/10 border border-purple-500/20 rounded-xl p-4 mb-8">
+          <div className="bg-gradient-to-r from-indigo-600/10 to-blue-600/10 border border-indigo-500/20 rounded-xl p-4 mb-8">
             <div className="flex items-center justify-between mb-2">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 flex items-center justify-center">
+                <div className="w-10 h-10 rounded-full bg-gradient-to-r from-indigo-600 to-blue-600 flex items-center justify-center">
                   <span className="text-white font-bold">{currentLevel?.level || 1}</span>
                 </div>
                 <div>
@@ -109,14 +109,14 @@ function DashboardContent() {
                     <span className="text-orange-400 font-medium">{gamification.streak} day streak</span>
                   </div>
                 )}
-                <Link href="/achievements" className="text-purple-400 hover:text-purple-300 text-sm">
+                <Link href="/achievements" className="text-indigo-400 hover:text-indigo-300 text-sm">
                   View All
                 </Link>
               </div>
             </div>
             <div className="h-2 bg-[#1a1a2a] rounded-full overflow-hidden">
               <div
-                className="h-full bg-gradient-to-r from-purple-600 to-pink-600 transition-all duration-500"
+                className="h-full bg-gradient-to-r from-indigo-600 to-blue-600 transition-all duration-500"
                 style={{ width: `${xpProgress}%` }}
               />
             </div>
@@ -132,14 +132,14 @@ function DashboardContent() {
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
           <div className="bg-[#0d0d15] border border-[#1a1a2a] rounded-xl p-4 sm:p-6">
             <div className="flex items-center gap-3 mb-2">
-              <Trophy className="w-5 h-5 text-purple-400" />
+              <Trophy className="w-5 h-5 text-indigo-400" />
               <span className="text-sm text-gray-400">Quizzes</span>
             </div>
             <p className="text-2xl sm:text-3xl font-bold text-white">{stats.totalQuizzes}</p>
           </div>
           <div className="bg-[#0d0d15] border border-[#1a1a2a] rounded-xl p-4 sm:p-6">
             <div className="flex items-center gap-3 mb-2">
-              <Target className="w-5 h-5 text-purple-400" />
+              <Target className="w-5 h-5 text-indigo-400" />
               <span className="text-sm text-gray-400">Avg. Score</span>
             </div>
             <p className="text-2xl sm:text-3xl font-bold text-white">
@@ -148,7 +148,7 @@ function DashboardContent() {
           </div>
           <div className="bg-[#0d0d15] border border-[#1a1a2a] rounded-xl p-4 sm:p-6">
             <div className="flex items-center gap-3 mb-2">
-              <Clock className="w-5 h-5 text-purple-400" />
+              <Clock className="w-5 h-5 text-indigo-400" />
               <span className="text-sm text-gray-400">Time Spent</span>
             </div>
             <p className="text-2xl sm:text-3xl font-bold text-white">
@@ -157,10 +157,10 @@ function DashboardContent() {
           </div>
           <Link
             href="/flashcards"
-            className="bg-[#0d0d15] border border-[#1a1a2a] rounded-xl p-4 sm:p-6 hover:border-purple-500/50 transition-colors"
+            className="bg-[#0d0d15] border border-[#1a1a2a] rounded-xl p-4 sm:p-6 hover:border-indigo-500/50 transition-colors"
           >
             <div className="flex items-center gap-3 mb-2">
-              <BookOpen className="w-5 h-5 text-purple-400" />
+              <BookOpen className="w-5 h-5 text-indigo-400" />
               <span className="text-sm text-gray-400">Cards Due</span>
             </div>
             <p className="text-2xl sm:text-3xl font-bold text-white">{dueFlashcards}</p>
@@ -176,7 +176,7 @@ function DashboardContent() {
               <Link
                 key={subject.id}
                 href={`/quiz/${subject.id}`}
-                className="group relative bg-[#0d0d15] border border-[#1a1a2a] rounded-2xl p-6 hover:border-purple-500/50 transition-all hover:-translate-y-1"
+                className="group relative bg-[#0d0d15] border border-[#1a1a2a] rounded-2xl p-6 hover:border-indigo-500/50 transition-all hover:-translate-y-1"
               >
                 <div className="flex items-start justify-between mb-4">
                   <div
@@ -189,12 +189,12 @@ function DashboardContent() {
                   </div>
                 </div>
 
-                <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-purple-400 transition-colors">
+                <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-indigo-400 transition-colors">
                   {subject.name}
                 </h3>
                 <p className="text-gray-400 text-sm mb-4">{subject.description}</p>
 
-                <div className="flex items-center gap-2 text-purple-400 font-medium">
+                <div className="flex items-center gap-2 text-indigo-400 font-medium">
                   <span>Start Quiz</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </div>

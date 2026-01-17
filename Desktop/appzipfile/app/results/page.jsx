@@ -163,9 +163,9 @@ function ResultsContent() {
 
       {showRewards && rewards.length > 0 && (
         <div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4">
-          <div className="bg-[#0d0d15] border border-purple-500/30 rounded-2xl p-6 max-w-md w-full animate-in fade-in zoom-in">
+          <div className="bg-[#0d0d15] border border-indigo-500/30 rounded-2xl p-6 max-w-md w-full animate-in fade-in zoom-in">
             <div className="text-center mb-6">
-              <div className="w-16 h-16 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-gradient-to-r from-indigo-600 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Trophy className="w-8 h-8 text-white" />
               </div>
               <h2 className="text-2xl font-bold text-white mb-2">Rewards Earned!</h2>
@@ -176,7 +176,7 @@ function ResultsContent() {
                 <div key={index} className="flex items-center gap-3 p-3 bg-[#1a1a2a] rounded-lg">
                   {reward.type === "xp" && (
                     <>
-                      <Zap className="w-5 h-5 text-purple-400" />
+                      <Zap className="w-5 h-5 text-indigo-400" />
                       <span className="text-white">+{reward.amount} XP</span>
                       <span className="text-gray-500 text-sm ml-auto">{reward.reason}</span>
                     </>
@@ -201,7 +201,7 @@ function ResultsContent() {
 
               {flashcardsCreated > 0 && (
                 <div className="flex items-center gap-3 p-3 bg-[#1a1a2a] rounded-lg">
-                  <BookOpen className="w-5 h-5 text-pink-400" />
+                  <BookOpen className="w-5 h-5 text-sky-400" />
                   <span className="text-white">{flashcardsCreated} flashcards created</span>
                   <span className="text-gray-500 text-sm ml-auto">from wrong answers</span>
                 </div>
@@ -223,7 +223,7 @@ function ResultsContent() {
               <p className="text-gray-400 mb-2">{subject} Quiz Results</p>
               <h1 className="text-4xl sm:text-5xl font-bold text-white mb-2">
                 You scored{" "}
-                <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-indigo-500 to-blue-500 bg-clip-text text-transparent">
                   {correctCount}/{questions.length}
                 </span>
               </h1>
@@ -243,14 +243,14 @@ function ResultsContent() {
                   cx="64"
                   cy="64"
                   r="56"
-                  stroke="url(#purpleGradient)"
+                  stroke="url(#blueGradient)"
                   strokeWidth="8"
                   fill="none"
                   strokeLinecap="round"
                   strokeDasharray={`${scorePercentage * 3.52} 352`}
                 />
                 <defs>
-                  <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="0%">
                     <stop offset="0%" stopColor="#9333ea" />
                     <stop offset="100%" stopColor="#ec4899" />
                   </linearGradient>
@@ -280,7 +280,7 @@ function ResultsContent() {
             </div>
             <div className="text-center">
               <div className="flex items-center justify-center gap-2 mb-1">
-                <Target className="w-5 h-5 text-purple-400" />
+                <Target className="w-5 h-5 text-indigo-400" />
                 <span className="text-2xl font-bold text-white">{Object.keys(gapsByConept).length}</span>
               </div>
               <p className="text-sm text-gray-400">Gaps Found</p>
@@ -308,7 +308,7 @@ function ResultsContent() {
             {flashcardsCreated > 0 && (
               <Link
                 href="/flashcards"
-                className="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 text-sm"
+                className="inline-flex items-center gap-2 text-indigo-400 hover:text-indigo-300 text-sm"
               >
                 <BookOpen className="w-4 h-4" />
                 Review {flashcardsCreated} new flashcards
@@ -375,10 +375,10 @@ function ResultsContent() {
                       </div>
                     </div>
 
-                    <div className="p-4 bg-purple-500/10 border border-purple-500/30 rounded-lg">
+                    <div className="p-4 bg-indigo-500/10 border border-indigo-500/30 rounded-lg">
                       <div className="flex items-center gap-2 mb-2">
-                        <Brain className="w-4 h-4 text-purple-400" />
-                        <p className="text-sm font-medium text-purple-400">AI Feedback</p>
+                        <Brain className="w-4 h-4 text-indigo-400" />
+                        <p className="text-sm font-medium text-indigo-400">AI Feedback</p>
                       </div>
                       <p className="text-gray-300 text-sm leading-relaxed">
                         {mockFeedback[q.concept] ||

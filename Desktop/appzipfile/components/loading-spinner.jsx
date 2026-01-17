@@ -26,8 +26,8 @@ export default function LoadingSpinner() {
     <div className="flex flex-col items-center justify-center min-h-[400px] gap-6">
       <div className="relative">
         <div className="w-20 h-20 border-4 border-[#1a1a2a] rounded-full" />
-        <div className="absolute top-0 left-0 w-20 h-20 border-4 border-purple-500 rounded-full border-t-transparent animate-spin" />
-        <Loader2 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 text-purple-500 animate-pulse" />
+        <div className="absolute top-0 left-0 w-20 h-20 border-4 border-indigo-500 rounded-full border-t-transparent animate-spin" />
+        <Loader2 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 text-indigo-500 animate-pulse" />
       </div>
 
       <div className="text-center">
@@ -36,7 +36,7 @@ export default function LoadingSpinner() {
       </div>
 
       <div className="w-64 h-2 bg-[#1a1a2a] rounded-full overflow-hidden">
-        <div className="h-full bg-gradient-to-r from-purple-600 to-pink-500 rounded-full animate-progress" />
+        <div className="h-full bg-gradient-to-r from-indigo-600 to-blue-500 rounded-full animate-progress" />
       </div>
 
       <style jsx>{`

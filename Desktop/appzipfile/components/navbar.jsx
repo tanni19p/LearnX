@@ -51,8 +51,8 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-2">
-            <Brain className="h-8 w-8 text-purple-500" />
-            <span className="text-xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+            <Brain className="h-8 w-8 text-indigo-500" />
+            <span className="text-xl font-bold bg-gradient-to-r from-indigo-500 to-blue-500 bg-clip-text text-transparent">
               LearnX
             </span>
           </Link>
@@ -65,15 +65,15 @@ export default function Navbar() {
               </div>
             )}
             {mounted && loggedIn && currentLevel && (
-              <div className="hidden sm:flex items-center gap-1 px-2 py-1 bg-purple-500/10 rounded-lg">
-                <span className="text-sm font-medium text-purple-400">Lv.{currentLevel.level}</span>
+              <div className="hidden sm:flex items-center gap-1 px-2 py-1 bg-indigo-500/10 rounded-lg">
+                <span className="text-sm font-medium text-indigo-400">Lv.{currentLevel.level}</span>
               </div>
             )}
 
             <Link
               href="/"
               className={`flex items-center gap-2 px-3 py-2 rounded-lg transition-colors ${
-                isActive("/") ? "text-purple-400 bg-purple-500/10" : "text-gray-400 hover:text-white hover:bg-[#1a1a2a]"
+                isActive("/") ? "text-indigo-400 bg-indigo-500/10" : "text-gray-400 hover:text-white hover:bg-[#1a1a2a]"
               }`}
             >
               <Home className="h-4 w-4" />
@@ -86,7 +86,7 @@ export default function Navbar() {
                   href="/dashboard"
                   className={`flex items-center gap-2 px-3 py-2 rounded-lg transition-colors ${
                     isActive("/dashboard")
-                      ? "text-purple-400 bg-purple-500/10"
+                      ? "text-indigo-400 bg-indigo-500/10"
                       : "text-gray-400 hover:text-white hover:bg-[#1a1a2a]"
                   }`}
                 >
@@ -98,7 +98,7 @@ export default function Navbar() {
                   href="/flashcards"
                   className={`flex items-center gap-2 px-3 py-2 rounded-lg transition-colors ${
                     isActive("/flashcards")
-                      ? "text-purple-400 bg-purple-500/10"
+                      ? "text-indigo-400 bg-indigo-500/10"
                       : "text-gray-400 hover:text-white hover:bg-[#1a1a2a]"
                   }`}
                 >
@@ -110,7 +110,7 @@ export default function Navbar() {
                   href="/achievements"
                   className={`flex items-center gap-2 px-3 py-2 rounded-lg transition-colors ${
                     isActive("/achievements")
-                      ? "text-purple-400 bg-purple-500/10"
+                      ? "text-indigo-400 bg-indigo-500/10"
                       : "text-gray-400 hover:text-white hover:bg-[#1a1a2a]"
                   }`}
                 >
@@ -122,7 +122,7 @@ export default function Navbar() {
                   href="/analytics"
                   className={`flex items-center gap-2 px-3 py-2 rounded-lg transition-colors ${
                     isActive("/analytics")
-                      ? "text-purple-400 bg-purple-500/10"
+                      ? "text-indigo-400 bg-indigo-500/10"
                       : "text-gray-400 hover:text-white hover:bg-[#1a1a2a]"
                   }`}
                 >
@@ -135,7 +135,7 @@ export default function Navbar() {
             {mounted && loggedIn ? (
               <div className="flex items-center gap-2">
                 <div className="hidden sm:flex items-center gap-2 px-3 py-2 bg-[#1a1a2a] rounded-lg">
-                  <User className="h-4 w-4 text-purple-400" />
+                  <User className="h-4 w-4 text-indigo-400" />
                   <span className="text-sm text-gray-300">{user?.name || "User"}</span>
                 </div>
                 <button
@@ -151,8 +151,8 @@ export default function Navbar() {
                 href="/login"
                 className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all ${
                   isActive("/login")
-                    ? "bg-purple-600 text-white"
-                    : "bg-gradient-to-r from-purple-600 to-pink-600 text-white hover:opacity-90"
+                    ? "bg-indigo-600 text-white"
+                    : "bg-gradient-to-r from-indigo-600 to-blue-600 text-white hover:opacity-90"
                 }`}
               >
                 <LogIn className="h-4 w-4" />
