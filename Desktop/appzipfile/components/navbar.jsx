@@ -53,7 +53,7 @@ export default function Navbar() {
           <Link href="/" className="flex items-center gap-2">
             <Brain className="h-8 w-8 text-purple-500" />
             <span className="text-xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
-              NeerDhaara
+              LearnX
             </span>
           </Link>
 

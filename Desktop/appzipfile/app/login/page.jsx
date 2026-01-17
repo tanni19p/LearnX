@@ -61,7 +61,7 @@ export default function LoginPage() {
             </div>
             <h1 className="text-3xl font-bold text-white mb-2">{isLogin ? "Welcome Back" : "Create Account"}</h1>
             <p className="text-gray-400">
-              {isLogin ? "Sign in to continue your learning journey" : "Join NeerDhaara and start detecting gaps"}
+              {isLogin ? "Sign in to continue your learning journey" : "Join LearnX and start detecting gaps"}
             </p>
           </div>
 

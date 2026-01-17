@@ -4,7 +4,7 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "NeerDhaara - AI Learning Gap Detector",
+  title: "LearnX - AI Learning Gap Detector",
   description: "Personalized insights for better learning",
     generator: 'v0.app'
 }

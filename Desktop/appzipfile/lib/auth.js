@@ -2,18 +2,18 @@
 
 export function getUser() {
   if (typeof window === "undefined") return null
-  const user = localStorage.getItem("neerdhara_user")
+  const user = localStorage.getItem("LearnX_user")
   return user ? JSON.parse(user) : null
 }
 
 export function setUser(userData) {
   if (typeof window === "undefined") return
-  localStorage.setItem("neerdhara_user", JSON.stringify(userData))
+  localStorage.setItem("LearnX_user", JSON.stringify(userData))
 }
 
 export function logout() {
   if (typeof window === "undefined") return
-  localStorage.removeItem("neerdhara_user")
+  localStorage.removeItem("LearnX_user")
 }
 
 export function isLoggedIn() {

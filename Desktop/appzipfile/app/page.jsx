@@ -73,7 +73,7 @@ export default function Home() {
       <section className="py-24 bg-[#0a0a0f]/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Why Choose NeerDhaara?</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Why Choose LearnX?</h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
               Our AI-powered platform helps you understand not just what you got wrong, but why—so you can truly master
               the concepts.
@@ -126,7 +126,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="py-8 border-t border-[#1a1a2a]">
         <div className="max-w-7xl mx-auto px-4 text-center text-gray-500">
-          <p>© 2026 NeerDhaara. AI-Powered Learning Gap Detection.</p>
+          <p>© 2026 LearnX. AI-Powered Learning Gap Detection.</p>
         </div>
       </footer>
     </div>
