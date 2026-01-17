@@ -61,8 +61,13 @@ Supabase (PostgreSQL)
 # Team
 
 Team Name: Debug Thugs
+
 Khushi Roy
+
 Tanishka Pradhan
+
 Rishab Kumar
+
 Harsh Soni
+
 Riddhi Tanwar
